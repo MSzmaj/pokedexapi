@@ -7,9 +7,9 @@
 * Clean up database collation and/or the ToLower() code for Name and Type1/2.
 
 In order to get this running:
-* Install Docker.
+* Install Docker (https://www.docker.com)
 * `cd` into the root directory and run `docker-compose up`. This will build and publish the app and bring up the database.
-* In order to migrate the pokemon: inside the container `cd` into src/DataAccess and run the following:
+* In order to migrate the pokemon: inside the container `cd` into `src/DataAccess` and run the following:
 ```
 RUN dotnet tool install -g dotnet-ef
 ENV PATH $PATH:/root/.dotnet/tools
